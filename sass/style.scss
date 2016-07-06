@@ -1,0 +1,209 @@
+* {
+	border-box: box-sizing;
+}
+
+.main-container {
+	width: 100%;
+	.header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 363px;
+		background-image: url(../img/mer.jpg);
+		background-size: 750px 363px;
+		background-repeat: no-repeat;
+		.logo {
+			width: 80px;
+			height: 80px;
+			margin-bottom: 20px;
+		}
+		.h1 {
+			color: #fff;
+			font-family: 'Lato', sans-serif;
+			letter-spacing: 5px;
+			font-size: 18px;
+			text-transform: uppercase;
+		}
+		.h2 {
+			color: #fff;
+			font-family: 'Lato', sans-serif;
+			font-weight: 300;
+			font-size: 14px;
+		}
+	}
+	.first-part {
+		width: 100%;
+		display: inline-block;
+		.text {
+			text-align: center;
+			font-family: 'Lato', sans-serif;
+			font-size: 15px;
+			font-weight: 300;
+		}
+		.ico {
+			.social-ico {
+				.icones {
+					display: inline;
+					margin: 26px;
+				}
+			}
+
+		}
+			.social-ico {
+				list-style: none;
+
+			}
+	}
+	.second-part {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.title { 
+			font-family: 'Lato', sans-serif;
+			text-transform: uppercase;
+			color: #acabac;
+		}
+		.first-pro {
+			
+			background-image: url(../img/japan.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			.text {
+				visibility: hidden;
+			}
+			.more {
+			width: 15%;
+			margin-left: 5%;
+			margin-bottom: 3%;
+			}
+		}
+		.second-pro {
+			
+			margin-top: 10px;
+			background-image: url(../img/pops.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			.text {
+				visibility: hidden;
+			}
+			.more {
+			width: 15%;
+			margin-left: 5%;
+			margin-bottom: 3%;
+			}
+		}
+		.third-pro {
+			
+			margin-top: 10px;
+			background-image: url(../img/coolcook.jpg);
+			background-repeat: no-repeat;
+			background-size: 100%;
+			.text {
+				visibility: hidden;
+			}
+			.more {
+			width: 15%;
+			margin-left: 5%;
+			margin-bottom: 3%;
+			}
+		}
+	}
+	.third-part {
+		margin-top: 10%;
+		background: rgba(53,17,89,1);
+		background: -moz-linear-gradient(-45deg, rgba(53,17,89,1) 0%, rgba(207,87,89,0.8) 51%, rgba(248,162,77,0.6) 100%);
+		background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(53,17,89,1)), color-stop(51%, rgba(207,87,89,0.8)), color-stop(100%, rgba(248,162,77,0.6)));
+		background: -webkit-linear-gradient(-45deg, rgba(53,17,89,1) 0%, rgba(207,87,89,0.8) 51%, rgba(248,162,77,0.6) 100%);
+		background: -o-linear-gradient(-45deg, rgba(53,17,89,1) 0%, rgba(207,87,89,0.8) 51%, rgba(248,162,77,0.6) 100%);
+		background: -ms-linear-gradient(-45deg, rgba(53,17,89,1) 0%, rgba(207,87,89,0.8) 51%, rgba(248,162,77,0.6) 100%);
+		background: linear-gradient(135deg, rgba(53,17,89,1) 0%, rgba(207,87,89,0.8) 51%, rgba(248,162,77,0.6) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#351159', endColorstr='#f8a24d', GradientType=1 );
+		.title {
+			font-family: 'Lato', sans-serif;
+			text-transform: uppercase;
+			color: #acabac;
+			margin-left: 30%;
+			h3 {
+				padding-top: 15%;
+			}
+		}
+		.form {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			.group { 
+  				position:relative; 
+  				margin-bottom:45px;
+  				margin-top: 20px;
+			}
+			.send {
+  					margin-bottom: 20px;
+  				}
+			input {
+			    font-size:18px;
+			    padding:10px 10px 10px 5px;
+			    display:block;
+			    width:300px;
+			    border:none;
+			    border-bottom:1px solid #757575;
+			}
+			input:focus { outline:none; }
+			label {
+				color:#999; 
+				font-size:18px;
+				font-weight:normal;
+				position:absolute;
+				pointer-events:none;
+				left:5px;
+				top:10px;
+				transition:0.2s ease all; 
+				-moz-transition:0.2s ease all; 
+				-webkit-transition:0.2s ease all;
+			}
+			input:focus ~ label, input:valid ~ label {
+				top:-20px;
+				font-size:14px;
+				color:#fff;
+			}
+			.bar:before, .bar:after 	{
+			    content:'';
+			    height:2px; 
+			    width:0;
+			    bottom:1px; 
+			    position:absolute;
+			    background:#28067d; 
+			    transition:0.2s ease all; 
+			    -moz-transition:0.2s ease all; 
+			    -webkit-transition:0.2s ease all;
+			}
+			.bar:before {
+			    left:50%;
+			}
+			.bar:after {
+			    right:50%; 
+			}
+			input:focus ~ .bar:before, input:focus ~ .bar:after {
+  				width:50%;
+			}
+			.highlight {
+				position:absolute;
+				height:60%; 
+				width:100px; 
+				top:25%; 
+				left:0;
+				pointer-events:none;
+				opacity:0.5;
+			}
+			
+
+			
+		}
+
+	}
+
+}
+
